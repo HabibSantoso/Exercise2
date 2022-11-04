@@ -129,6 +129,21 @@ namespace Exercise2
             QuickSort(HS + 1, high);
         }
 
+        public void display()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("Element array yang telah terseusun");
+            Console.WriteLine("----------------------------");
+
+            //melakukan perulangan untuk menapilka isi array
+            for (int HS = 0; HS < n; HS++)
+            {
+                Console.WriteLine(habib[HS] + " ");
+            }
+            Console.WriteLine("");
+        }
+
         static void Main(string[] args)
         {
         }
