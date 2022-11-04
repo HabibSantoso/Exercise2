@@ -79,6 +79,56 @@ namespace Exercise2
             habib[x] = habib[y];
             habib[y] = temp;
         }
+
+        public void QuickSort(int low, int high)
+        {
+            // deklarasi variable pivot dan yang di butuhkan
+            double pivot;
+            int i, HS;
+
+            // melalukan pengecekan pada low index dan high index
+            if (low > high)
+                return;
+
+            i = low + 1;
+            HS = high;
+            pivot = habib[low];
+
+            while (i <= HS)
+            {
+                while ((habib[i] <= pivot) && (i <= high))
+                {
+                    i++;
+                    cmp_count++;
+                }
+                cmp_count++;
+
+                while ((habib[HS] > pivot) && (HS >= low))
+                {
+                    HS--;
+                    cmp_count++;
+                }
+                cmp_count++;
+
+                if (i < HS)
+                {
+                    swap(i, HS);
+                    mov_count++;
+                }
+            }
+
+            if (low < HS)
+            {
+                swap(low, HS);
+                mov_count++;
+            }
+
+
+            QuickSort(low, HS - 1);
+
+            QuickSort(HS + 1, high);
+        }
+
         static void Main(string[] args)
         {
         }
