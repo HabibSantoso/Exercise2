@@ -180,7 +180,7 @@ namespace Exercise2
                     Console.WriteLine("Quick Sort");
                     Console.WriteLine("-----------------");
                     myList.input();
-                    myList.QuickSort(0, myList.getsize()-1;
+                    myList.QuickSort(0, myList.getsize()-1);
                     break;
                 case 3:
                     Console.WriteLine("exit. ");
