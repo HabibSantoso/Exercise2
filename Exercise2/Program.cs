@@ -18,7 +18,25 @@ namespace Exercise2
         private int n;
 
 
-        
+        //function untuk menapilkan permintaan element
+        void input()
+        {
+            while (true)
+            {
+                Console.Write("Enter the number of element in the array : ");
+                string s = Console.ReadLine();
+                n = Int32.Parse(s);
+                if (n <= 20)
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("\nArray can have maximum 44 elements \n");
+                }
+
+            }
+        }
 
         static void Main(string[] args)
         {
