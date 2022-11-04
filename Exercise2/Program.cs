@@ -144,6 +144,12 @@ namespace Exercise2
             Console.WriteLine("");
         }
 
+        //menambahkan funtion untuk menhitung jumlah data
+        int getsize()
+        {
+            return (n);
+        }
+
         static void Main(string[] args)
         {
             Program myList = new Program();
