@@ -152,9 +152,9 @@ namespace Exercise2
 
         static void Main(string[] args)
         {
+            //memanggil class program
             Program myList = new Program();
             int pilihanmenu;
-            //char ch;
 
             Console.WriteLine("Menu Option");
             Console.WriteLine("================");
@@ -164,6 +164,8 @@ namespace Exercise2
             Console.WriteLine(" Enter your choice (1,2,3) : ");
             pilihanmenu = Convert.ToInt32(Console.ReadLine());
 
+
+            //mengunakan switch untuk pilihan lebih dari satu
             switch (pilihanmenu)
             {
                 case 1:
