@@ -146,6 +146,44 @@ namespace Exercise2
 
         static void Main(string[] args)
         {
+            Program myList = new Program();
+            int pilihanmenu;
+            //char ch;
+
+            Console.WriteLine("Menu Option");
+            Console.WriteLine("================");
+            Console.WriteLine("1. Insertion sort");
+            Console.WriteLine("2. Quick sort");
+            Console.WriteLine("3. exit");
+            Console.WriteLine(" Enter your choice (1,2,3) : ");
+            pilihanmenu = Convert.ToInt32(Console.ReadLine());
+
+            switch (pilihanmenu)
+            {
+                case 1:
+                    Console.WriteLine("");
+                    Console.WriteLine("-----------------");
+                    Console.WriteLine("Insertion sort");
+                    Console.WriteLine("-----------------");
+                    myList.input();
+                    myList.InsertionSort();
+                    break;
+                case 2:
+                    Console.WriteLine("");
+                    Console.WriteLine("-----------------");
+                    Console.WriteLine("Quick Sort");
+                    Console.WriteLine("-----------------");
+                    myList.input();
+                    myList.QuickSort(0, myList.getsize()-1;
+                    break;
+                case 3:
+                    Console.WriteLine("exit. ");
+                    break;
+                default:
+                    Console.WriteLine("error");
+                    break;
+
+            }
         }
     }
 }
