@@ -70,7 +70,15 @@ namespace Exercise2
             }
         }
 
-        
+        // swap function untuk menukar value element
+        void swap(int x, int y)
+        {
+            double temp; // deklarasi temporary
+
+            temp = habib[x];
+            habib[x] = habib[y];
+            habib[y] = temp;
+        }
         static void Main(string[] args)
         {
         }
