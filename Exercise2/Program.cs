@@ -35,8 +35,22 @@ namespace Exercise2
                     Console.WriteLine("\nArray can have maximum 44 elements \n");
                 }
 
+                Console.WriteLine("");
+                Console.WriteLine("----------------------------");
+                Console.WriteLine("Insert elemen array");
+                Console.WriteLine("----------------------------");
+
+                //meminta value element secara bertahap dengan for
+                for (int i = 0; i < n; i++)
+                {
+                    Console.Write("<" + (i + 1) + "> ");
+                    string s1 = Console.ReadLine();
+                    habib[i] = Int32.Parse(s1);
+                }
             }
         }
+
+
 
         static void Main(string[] args)
         {
