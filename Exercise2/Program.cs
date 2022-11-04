@@ -52,9 +52,25 @@ namespace Exercise2
             }
         }
 
+        //Insertion sort
+        public void InsertionSort()
+        {
+            for (int i = 1; i < (n-1); i++)
+            {
+                double temp = habib[i]; // menetapkan temporary value
+                int HS = i - 1; 
+
+                
+                while (HS < 0 || habib[HS] <= temp)
+                {
+                    habib[HS + 1] = habib[HS];
+                    HS = HS - 1;
+                }
+                habib[HS + 1] = temp;
+            }
+        }
+
         
-
-
         static void Main(string[] args)
         {
         }
