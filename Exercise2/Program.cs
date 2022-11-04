@@ -25,8 +25,10 @@ namespace Exercise2
             {
                 Console.Write("Enter the number of element in the array : ");
                 string s = Console.ReadLine();
-                n = Int32.Parse(s);
-                if (n <= 20)
+                n = Int32.Parse(s); // konversi input line menjadi integer
+
+                // melakukan pengecekan tidak lebih dari batas maksimal jumlah element
+                if (n <= 44)
                 {
                     break;
                 }
@@ -50,6 +52,7 @@ namespace Exercise2
             }
         }
 
+        
 
 
         static void Main(string[] args)
